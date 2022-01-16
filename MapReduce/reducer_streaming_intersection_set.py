@@ -15,10 +15,13 @@
 import sys
 
 tempdict = dict()
+result_list = []
 for line in sys.stdin:
     el_set,marker_set = line.strip().split('\t')
-1    tempdict.update({el_set:marker_set})
-for i in tempdict.keys():
+    if tempdict.get(el_set):
+        result_list.append(el_set)
+    tempdict.update({el_set:marker_set})
+for i in result_list:
     print(i)
 
 
