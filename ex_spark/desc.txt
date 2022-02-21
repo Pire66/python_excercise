@@ -1,0 +1,6 @@
+docker run -it --rm -p 8888:8888 -v $(pwd):/home/jovyan/work jupyter/pyspark-notebook
+docker stop 98924d03c12 d5c698285c79 a80073815e6f ca1a8a9338b1 50a47a62c7a3 c77ae857b3e9 60f78b10b0f2
+docker ps -a
+cd team1/HW9
+docker run -it --rm -p 8888:8888 -v $(pwd):/home/jovyan/work jupyter/pyspark-notebook
+
